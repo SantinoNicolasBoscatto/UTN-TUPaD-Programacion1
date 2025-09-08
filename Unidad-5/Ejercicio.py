@@ -161,24 +161,37 @@ ta_te_ti = [
     ["-","-","-"],
     ["-","-","-"]
 ]
+contador = 0
 
+# Cada jugador tendrá 3 turnos
+while contador < 3: 
+    contador += 1
 
-# while True: 
-#     jugador_uno_entrada = input("Jugador uno, ingrese la posicion donde quiere colocar la X, separe los numeros con espacios (numeros admitidos del 0 al 2): ")
-#     fila, columna = map(int, jugador_uno_entrada.split(" "))
-#     ta_te_ti[fila][columna] = "X"
+    # Turno jugador uno
+    while True:
+        jugador_uno_entrada = input("Jugador uno, ingrese la posición donde quiere colocar la X (formato: fila columna, del 0 al 2): ")
+        fila, columna = map(int, jugador_uno_entrada.split(" "))
+        if ta_te_ti[fila][columna] == "-":
+            ta_te_ti[fila][columna] = "X"
+            break
+        else:
+            print("Casilla ocupada. Intente otra posición.")
 
-#     for fila in ta_te_ti:
-#         print(" ".join(fila))
+    for fila_tablero in ta_te_ti:
+        print(" ".join(fila_tablero))
 
-#     jugador_dos_entrada = input("Jugador dos, ingrese la posicion donde quiere colocar la O, separe los numeros con espacios (numeros admitidos del 0 al 2): ")
-#     fila, columna = map(int, jugador_dos_entrada.split(" "))
-#     ta_te_ti[fila][columna] = "O"
+    # Turno jugador dos
+    while True:
+        jugador_dos_entrada = input("Jugador dos, ingrese la posición donde quiere colocar la O (formato: fila columna, del 0 al 2): ")
+        fila, columna = map(int, jugador_dos_entrada.split(" "))
+        if ta_te_ti[fila][columna] == "-":
+            ta_te_ti[fila][columna] = "O"
+            break
+        else:
+            print("Casilla ocupada. Intente otra posición.")
 
-#     for fila in ta_te_ti:
-#         print(" ".join(fila))
-
-
+    for fila_tablero in ta_te_ti:
+        print(" ".join(fila_tablero))
 
 #10
 dias_productos = [
