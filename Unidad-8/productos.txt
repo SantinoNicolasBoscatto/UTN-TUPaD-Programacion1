@@ -1,0 +1,6 @@
+Lapicera,120.5,30
+Cuaderno,250.0,50
+Mochila,1500.0,10
+Lapiz,60.0,50
+Regla,10.0,1
+Transportador,90.0,100
