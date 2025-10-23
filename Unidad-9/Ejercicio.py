@@ -48,9 +48,9 @@ def decimal_a_binario(n):
     else:
         return decimal_a_binario(n // 2) + str(n % 2)
 
-num = int(input("Ingrese un número decimal: "))
+num = int(input("Ingrese un numero decimal: "))
 binario = decimal_a_binario(num)
-print(f"El número {num} en binario es: {binario if binario != '' else '0'}")
+print(f"El numero {num} en binario es: {binario if binario != '' else '0'}")
 
 
 
@@ -64,7 +64,7 @@ def es_palindromo(palabra):
         return es_palindromo(palabra[1:-1])
 
 texto = input("Ingrese una palabra: ").lower()
-print("La palabra es un palindromo" if es_palindromo(texto) else "La palabra no es palíndromo")
+print("La palabra es un palindromo" if es_palindromo(texto) else "La palabra no es palindromo")
 
 
 
@@ -101,6 +101,6 @@ def contar_digito(numero, digito):
         return contar_digito(numero // 10, digito)
 
 num = int(input("Ingrese un numero: "))
-dig = int(input("Ingrese el dígito que quiere buscar, de 0 a 9: "))
+dig = int(input("Ingrese el digito que quiere buscar, de 0 a 9: "))
 print(f"El digito {dig} aparece {contar_digito(num, dig)} veces en {num}")
 
