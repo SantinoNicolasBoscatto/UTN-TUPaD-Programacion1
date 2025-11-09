@@ -240,3 +240,7 @@ Alemania                          83000000      357588 km²   Europa
   - `os` → manejo de archivos y validaciones  
   - `unicodedata` → normalización de texto  
   - `sys` →  finalizar la ejecución del programa de forma controlada
+
+
+## Link Video: 
+https://youtu.be/dYkhdhQ3pZg
